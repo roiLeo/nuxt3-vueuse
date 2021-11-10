@@ -1,8 +1,8 @@
 <script setup>
 // Auto-import with tree-shaking from https://vueuse.org/functions.html#browser
 // Thanks to uxt 3 auto import, https://v3.nuxtjs.org/
-const { x, y } = useMouse();
-const { width, height } = useWindowSize();
+// const { x, y } = useMouse();
+// const { width, height } = useWindowSize();
 
 const red = computed(() => Math.round((x.value / width.value) * 255));
 const green = computed(() => Math.round((y.value / height.value) * 255));
